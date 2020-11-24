@@ -21,7 +21,7 @@ class KategoriAdapter(private val listMyData: ArrayList<DataKategori>) : Recycle
 
     override fun getItemCount(): Int = listMyData.size
 
-    inner class KategoriHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class KategoriHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind(dataKategori: DataKategori) {
             with(itemView){
                 tv_kategori.text = dataKategori.kategori

@@ -15,7 +15,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
 
     private lateinit var recyclerView: RecyclerView
-    private lateinit var listKategori: RecyclerView.Adapter<DataKategori>
+    private lateinit var viewAdapter: RecyclerView.Adapter<DataKategori>
     private lateinit var viewManager: RecyclerView.LayoutManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,7 +26,15 @@ class MainActivity : AppCompatActivity() {
 
         val db: FirebaseFirestore = FirebaseFirestore.getInstance()
 
+        viewManager = LinearLayoutManager(this)
+        viewAdapter = KategoriAdapter(DataKategori)
+
+        rv_kategori.apply {
+            setHasFixedSize(true)
+            layoutManager = viewManager
+            adapter = viewAdapter
         }
+
     }
 
     fun getKatagori(): ArrayList<DataKategori> {
@@ -39,5 +47,4 @@ class MainActivity : AppCompatActivity() {
         }
         return listKategori
     }
-}
 }
