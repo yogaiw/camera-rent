@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "567549612877",
+    "firebase_url": "https://kancil-rental-kamera-19f28.firebaseio.com",
+    "project_id": "kancil-rental-kamera-19f28",
+    "storage_bucket": "kancil-rental-kamera-19f28.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:567549612877:android:b0229256b6541435a9dd04",
+        "android_client_info": {
+          "package_name": "com.kancilrentalkamera.kancilrentalkamera"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "567549612877-o8crp6hg158ic8o2lcotnqv9p55ctark.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfy-IajLFJ1hbxBPnoClwJERxsMwFyaQs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "567549612877-o8crp6hg158ic8o2lcotnqv9p55ctark.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
